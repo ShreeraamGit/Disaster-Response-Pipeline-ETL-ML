@@ -9,7 +9,13 @@ The goal of this project is to classify different messages, that people in a dis
 
 ### Installation
 
-The code should run with no issues using Python versions 3.*
+The code should run with no issues using Python versions 3.* 
+
+Special mention should be made as this project handles a lot of codes that deal with human language data, i would recommend NLTK libarary. It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries.
+
+### NLTK requires Python versions 3.5, 3.6, 3.7, or 3.8.
+
+### Install NLTK: run pip install --user -U nltk - For MAC/LINUX users.
 
 Run the following commands in the project's root directory to set up your database and model.
 
