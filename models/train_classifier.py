@@ -27,6 +27,14 @@ from sklearn.model_selection import train_test_split
 
 def load_data(database_filepath):
     
+    """ Function to load data from the sqlite database and returns the feature and target dfs.
+    Args:
+        database_filepath: the path of sqlite database file
+    Returns:
+        (tuple): Returns a tuple consisting of feature, target, and target column names
+                (as its a multi-output classifier) example.
+    """
+    
     engine = create_engine('sqlite:///DisasterResponse_project.db')
     df = pd.read_sql_table('messages_table', engine)
 
@@ -45,6 +53,14 @@ def load_data(database_filepath):
 
 def tokenize(text):
     
+    """ Custom tokenizer function
+    
+    Args:
+        text: sentences to be tokenized.
+    Returns:
+        (list): a list of token after tokenization.
+    """""
+    
     text = re.sub(r"[^a-zA-Z0-9]", " ", text.lower())
 
     tokens = word_tokenize(text)
@@ -60,6 +76,10 @@ def tokenize(text):
 
 def build_model():
     
+    """ Function to build create ml pipeline and create a GridSearch Model.
+    Returns:
+        (object): returns a Gridsearch class instance object (Which is used to train our model).
+    """
     
     from sklearn.multioutput import MultiOutputClassifier
     from sklearn.pipeline import Pipeline
@@ -85,6 +105,14 @@ def build_model():
 
 def evaluate_model(model, X_test, Y_test, category_names):
     
+    """ Run the ML model and print the resulting ML metrics.
+    Args:
+        model: ML model
+        X_test: Feature data nd array
+        Y_test: Target data nd array
+        category_names: list of target classes
+    """
+    
     predicted = model.predict(X_test)
 
     from sklearn.metrics import classification_report
@@ -100,6 +128,12 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
+    
+    """ Function to save the model in a pickle file for later use.
+    Args:
+        model: ML model
+        model_filepath: path where the model will be saved
+    """
     
     import pickle
     pickle.dump(model, open(model_filepath, 'wb'))
