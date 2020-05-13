@@ -29,5 +29,4 @@ Run the following command in the app's directory to run your web app.
 
 ### Licensing and Acknowledgements
 
-This data set used for training is provided by Figure Eight
-and Udacity.
+This data set used for training is provided by [Figure Eight](https://appen.com/datasets/combined-disaster-response-data/).
