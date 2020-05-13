@@ -4,7 +4,7 @@ This repostry contains the files related to my project Disaster Resposnse Pipeli
 
 ### Introduction
 
-The goal of this project is to classify different messages, that people in a distress during any disaster might send, into proper classes for easy support and help can be planned and assisted.
+The goal of this project is to classify different messages, that people in a distress during any disaster might send, into proper classes for easy support and help can be planned and assisted. And also i have designed a Web Page to Classify the Messages which also shows the overview of the training Dataset
 
 ### Installation
 
