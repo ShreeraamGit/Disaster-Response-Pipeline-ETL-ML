@@ -14,7 +14,9 @@ Special mention should be made as this project handles a lot of codes that deal 
 
 ### NLTK requires Python versions 3.5, 3.6, 3.7, or 3.8.
 
-### Install NLTK: run pip install --user -U nltk - For MAC/LINUX users.
+### MAC/LINUX users 
+
+### Install NLTK: run pip install --user -U nltk
 
 Run the following commands in the project's root directory to set up your database and model.
 
