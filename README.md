@@ -4,7 +4,15 @@ This repostry contains the files related to my project Disaster Resposnse Pipeli
 
 ### Introduction
 
-The goal of this project is to classify different messages, that people in a distress during any disaster might send, into proper classes for easy support and help can be planned and assisted. And also i have designed a Web Page to Classify the Messages which also shows the overview of the training Dataset
+The goal of this project is to classify different messages, that people in a distress during any disaster might send, into proper classes for easy support and help can be planned and assisted. And also i have designed a Web Page to Classify the Messages which also shows the overview of the training Dataset.
+
+### File Descriptions.
+
+This repostry contain 3 folders for Data Cleansing, Modeling and Deploying the results in the web app and they are mentioned as 
+
+- data - For Data Wrnagling and Cleansing.(process.py)
+- model - Modeling - For training the data set.(train_classifier.py)
+- app - for deploying the reslut in an custom made web app which also give an overview of the training dataset.(run.py)
 
 ### Installation
 
