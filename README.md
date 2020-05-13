@@ -4,7 +4,6 @@ This repostry contains the files related to my project Disaster Resposnse Pipeli
 
 ### Introduction
 
-This project is done under the Udacity Data Science Nano Degree.
 The goal of this project is to classify different messages, that people in a distress during any disaster might send, into proper classes for easy support and help can be planned and assisted.
 
 ### Installation
