@@ -36,6 +36,12 @@ def clean_data(df):
 
 def save_data(df, database_filename):
     
+    """ Save processed raw data into a SQlite database.
+    Args:
+        df: processed data
+        database_filename: Database file name
+    """
+    
     engine = create_engine('sqlite:///DisasterResponse_project.db')
     df.to_sql('messages_table', engine, index=False)
 
