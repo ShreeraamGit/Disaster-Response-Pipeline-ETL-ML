@@ -87,6 +87,25 @@ def index():
                 }
             }
         },
+        {
+            'data': [
+                plotly.graph_objs.Pie(
+                    
+                    labels = genre_names,
+                    values = genre_counts,
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Message Genres',
+                'name': {
+                    'title': "Genre"
+                },
+                'values': {
+                    'title': "Count"
+                }
+            }
+        },
     ]
     
     # encode plotly graphs in JSON
